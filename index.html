@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Wefly 素材月度复盘报告 - 2026年01月</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background-color: #F7F8FA; color: #1F2937; margin: 0; padding: 20px; }
+        .container { max-width: 1000px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 1.8rem; border-left: 4px solid #3B82F6; padding-left: 15px; margin-top: 40px; }
+        h3 { font-size: 1.3rem; margin-top: 30px; color: #3B82F6; }
+        h4 { margin-top: 25px; }
+        .card { background: #FFFFFF; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+        .summary-box { background: #EFF6FF; border-radius: 8px; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid #E5E7EB; }
+        th { background-color: #F9FAFB; font-weight: 600; }
+        .chart-container { height: 300px; width: 100%; margin: 20px 0; }
+        .conclusion { font-style: italic; color: #6B7280; display: block; margin-bottom: 15px; }
+        .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; background: #E5E7EB; margin: 2px; }
+        .region-card { background: #F9FAFB; border-radius: 8px; padding: 20px; border: 1px solid #eee; margin-bottom: 15px; }
+        .material-link { color: #3B82F6; text-decoration: none; }
+        .material-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Wefly 素材月度复盘报告</h1>
+            <p style="color: #6B7280">报告周期：2026年01月</p>
+        </header>
+
+        <section id="summary" class="card">
+            <h2>全局结论总览 (Executive Summary)</h2>
+            <div class="summary-box">
+                <p><strong>1. 素材类型趋势：</strong>本月素材投放以<strong>视频</strong>为主导，消耗占比达 74.60%。平面素材消耗占比较低，仅为 7.74%。</p>
+                <p><strong>2. 新老素材关系：</strong>本月消耗高度依赖<strong>老素材</strong>（占比 95.12%），新素材消耗仅占 4.88%。素材池面临一定的疲劳风险，需加速新素材迭代。</p>
+                <p><strong>3. 核心创意信号：</strong><strong>"弹幕射击"</strong>和<strong>"未标记"</strong>是本月最核心的流量抓手。</p>
+                <p><strong>4. 尺寸方向：</strong><strong>9:16</strong> 仍是绝对主流尺寸，消耗占比超过 84%。</p>
+                <p><strong>5. 数据口径说明：</strong>Android 端参考 ROI7 数据进行回收分析；iOS 端受限于归因，仅参考消耗与吸量结构。</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>素材自身维度分析</h2>
+            <h3>1.1 素材大类分析</h3>
+            <div class="grid">
+                <div class="chart-container"><canvas id="typeChart"></canvas></div>
+                <table><thead><tr><th>素材类型</th><th>消耗占比</th></tr></thead><tbody><tr><td>视频</td><td>74.60%</td></tr><tr><td>文案</td><td>17.67%</td></tr><tr><td>平面</td><td>7.74%</td></tr></tbody></table>
+            </div>
+            <h3>1.2 素材标签分析 (核心)</h3>
+            <h4>视频素材标签 Top 5</h4>
+            <table><thead><tr><th>标签</th><th>消耗占比</th><th>ROI7 (Android)</th></tr></thead><tbody><tr><td>弹幕射击</td><td>25.17%</td><td>16.45%</td></tr><tr><td>未标记</td><td>17.67%</td><td>47.01%</td></tr><tr><td>立绘展示</td><td>15.24%</td><td>23.91%</td></tr><tr><td>英雄介绍</td><td>10.87%</td><td>17.66%</td></tr><tr><td>手绘剧情</td><td>8.48%</td><td>13.92%</td></tr></tbody></table>
+            <h4>代表性头部素材</h4>
+            <table><thead><tr><th>广告名称</th><th>标签</th><th>链接</th></tr></thead><tbody><tr><td>Video-hxy-10275(en,9B16,2D,R0)[弹幕射击][hxy]sj经典狮子头开场-sinodemo</td><td><span class="tag">弹幕射击</span></td><td><a class="material-link" href="https://www.youtube.com/watch?v=8smzcRVkBOE" target="_blank">查看素材</a></td></tr><tr><td>Video-gyh-10214(en,9B16,2D,R0)[英雄介绍,弹幕射击][gyh]sj快剪BOSS大招</td><td><span class="tag">英雄介绍</span></td><td><a class="material-link" href="https://www.youtube.com/watch?v=zKvw0bfAsTo" target="_blank">查看素材</a></td></tr><tr><td>Video-zyy-11397(en,9B16,2D,R0)[立绘展示][zyy]sjS5英雄BOSS滚动展示迭代新角色版一-sinodemo</td><td><span class="tag">立绘展示</span></td><td><a class="material-link" href="https://www.youtube.com/watch?v=13zEvO_P2vk" target="_blank">查看素材</a></td></tr><tr><td>Video-hxy-11148(en,9B16,2D,R0)[弹幕射击][lh]sj经典开头能过第四关吗版二-sinodemo</td><td><span class="tag">弹幕射击</span></td><td><a class="material-link" href="https://www.youtube.com/watch?v=2b81s36frdM" target="_blank">查看素材</a></td></tr><tr><td>Video-felixzhao-10001(en,16B9,2D,R0)[手绘剧情][lh]首曝PV完整版大推-sinodemo</td><td><span class="tag">手绘剧情</span></td><td><a class="material-link" href="#N/A" target="_blank">查看素材</a></td></tr></tbody></table>
+        </section>
+
+        <section class="card">
+            <h2>素材尺寸占比分析</h2>
+            <span class="conclusion">视频素材以9:16为主，平面素材则以1:1和16:9和4:5和#N/A为主。</span>
+            <div class="grid">
+                <div>
+                    <h3>视频素材尺寸占比</h3>
+                    <div class="chart-container"><canvas id="videoSizeChart"></canvas></div>
+                    <table><thead><tr><th>尺寸</th><th>消耗占比</th></tr></thead><tbody><tr><td>9:16</td><td>84.26%</td></tr><tr><td>16:9</td><td>14.25%</td></tr><tr><td>1:1</td><td>1.49%</td></tr></tbody></table>
+                </div>
+                <div>
+                    <h3>平面素材尺寸占比</h3>
+                    <div class="chart-container"><canvas id="imageSizeChart"></canvas></div>
+                    <table><thead><tr><th>尺寸</th><th>消耗占比</th></tr></thead><tbody><tr><td>1:1</td><td>52.75%</td></tr><tr><td>16:9</td><td>26.81%</td></tr><tr><td>4:5</td><td>20.44%</td></tr><tr><td>#N/A</td><td>0.01%</td></tr></tbody></table>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>OS & 渠道偏好分析</h2>
+            <div class="grid">
+                <div><h3>OS 维度</h3><table><thead><tr><th>平台</th><th>消耗占比</th><th>ROI7 (Android)</th></tr></thead><tbody><tr><td>IOS</td><td>71.67%</td><td>N/A</td></tr><tr><td>ANDROID</td><td>28.33%</td><td>25.04%</td></tr></tbody></table></div>
+                <div><h3>渠道维度</h3><table><thead><tr><th>渠道</th><th>消耗占比</th></tr></thead><tbody><tr><td>googleadwords_int</td><td>48.30%</td></tr><tr><td>Facebook Ads</td><td>45.01%</td></tr><tr><td>bytedanceglobal_int</td><td>6.69%</td></tr></tbody></table></div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>制作方 & 创意方分析（仅视频 & 平面素材）</h2>
+            <span class="conclusion">制作方 <strong>zyy</strong> 消耗占比最高（26.44%），Android ROI7 为 19.95%。 高 ROI 制作方包括：byl(41.7%)、mkt(35.2%)，建议加大合作力度。</span>
+            <span class="conclusion">创意方 <strong>zyy</strong> 消耗占比最高（18.00%），Android ROI7 为 23.31%。 高 ROI 创意方包括：ddd(67.3%)，建议优先排期。</span>
+            <div class="grid">
+                <div>
+                    <h3>制作方 TOP5（按消耗占比降序）</h3>
+                    <table><thead><tr><th>制作方</th><th>消耗占比</th><th>ROI7 (Android)</th></tr></thead><tbody><tr><td>zyy</td><td>26.44%</td><td>19.95%</td></tr><tr><td>hxy</td><td>22.60%</td><td>16.45%</td></tr><tr><td>wysj</td><td>10.13%</td><td>15.34%</td></tr><tr><td>felixzhao</td><td>8.94%</td><td>14.87%</td></tr><tr><td>gyh</td><td>8.23%</td><td>18.77%</td></tr></tbody></table>
+                </div>
+                <div>
+                    <h3>创意方 TOP5（按消耗占比降序）</h3>
+                    <table><thead><tr><th>创意方</th><th>消耗占比</th><th>ROI7 (Android)</th></tr></thead><tbody><tr><td>zyy</td><td>18.00%</td><td>23.31%</td></tr><tr><td>hxy</td><td>15.72%</td><td>15.60%</td></tr><tr><td>lx</td><td>14.82%</td><td>21.67%</td></tr><tr><td>lh</td><td>14.09%</td><td>24.50%</td></tr><tr><td>gyh</td><td>8.23%</td><td>18.77%</td></tr></tbody></table>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>分地区深度分析</h2>
+            <div class="region-card"><h4 style="color: #3B82F6; margin-top: 0;">US 地区</h4><p><strong>消耗占比:</strong> 24.09%</p><p><strong>Top 标签:</strong><br><span class="tag">弹幕射击</span> <span class="tag">策略肉鸽</span> <span class="tag">立绘展示</span> <span class="tag">未标记</span> <span class="tag">手绘剧情</span> </p><p style="font-size: 0.9rem; margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 5px;"><strong>策略建议:</strong> 维持当前素材结构，小幅尝试新标签迭代</p></div>
+<div class="region-card"><h4 style="color: #3B82F6; margin-top: 0;">T3 地区</h4><p><strong>消耗占比:</strong> 23.05%</p><p><strong>Top 标签:</strong><br><span class="tag">弹幕射击</span> <span class="tag">未标记</span> <span class="tag">立绘展示</span> <span class="tag">英雄介绍</span> <span class="tag">玩法介绍</span> </p><p style="font-size: 0.9rem; margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 5px;"><strong>策略建议:</strong> 维持当前素材结构，小幅尝试新标签迭代</p></div>
+<div class="region-card"><h4 style="color: #3B82F6; margin-top: 0;">EU 地区</h4><p><strong>消耗占比:</strong> 22.31%</p><p><strong>Top 标签:</strong><br><span class="tag">未标记</span> <span class="tag">弹幕射击</span> <span class="tag">英雄介绍</span> <span class="tag">立绘展示</span> <span class="tag">手绘剧情</span> </p><p style="font-size: 0.9rem; margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 5px;"><strong>策略建议:</strong> 维持当前素材结构，小幅尝试新标签迭代</p></div>
+<div class="region-card"><h4 style="color: #3B82F6; margin-top: 0;">JP 地区</h4><p><strong>消耗占比:</strong> 20.24%</p><p><strong>Top 标签:</strong><br><span class="tag">英雄介绍</span> <span class="tag">未标记</span> <span class="tag">手绘剧情</span> <span class="tag">弹幕射击</span> <span class="tag">玩法介绍</span> </p><p style="font-size: 0.9rem; margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 5px;"><strong>策略建议:</strong> 尝试结合手绘剧情与玩法介绍，提升用户沉浸感</p></div>
+<div class="region-card"><h4 style="color: #3B82F6; margin-top: 0;">KR 地区</h4><p><strong>消耗占比:</strong> 5.35%</p><p><strong>Top 标签:</strong><br><span class="tag">弹幕射击</span> <span class="tag">立绘展示</span> <span class="tag">未标记</span> <span class="tag">英雄介绍</span> <span class="tag">AI创作</span> </p><p style="font-size: 0.9rem; margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 5px;"><strong>策略建议:</strong> 维持当前素材结构，小幅尝试新标签迭代</p></div>
+<div class="region-card"><h4 style="color: #3B82F6; margin-top: 0;">SEA 地区</h4><p><strong>消耗占比:</strong> 3.32%</p><p><strong>Top 标签:</strong><br><span class="tag">立绘展示</span> <span class="tag">弹幕射击</span> <span class="tag">AI2D</span> <span class="tag">AI3D</span> <span class="tag">玩法介绍</span> </p><p style="font-size: 0.9rem; margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 5px;"><strong>策略建议:</strong> 提升立绘展示类平面素材产出，利用视觉冲击吸量</p></div>
+<div class="region-card"><h4 style="color: #3B82F6; margin-top: 0;">THM 地区</h4><p><strong>消耗占比:</strong> 1.63%</p><p><strong>Top 标签:</strong><br><span class="tag">弹幕射击</span> <span class="tag">AI2D</span> <span class="tag">立绘展示</span> <span class="tag">手绘剧情</span> <span class="tag">AI3D</span> </p><p style="font-size: 0.9rem; margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 5px;"><strong>策略建议:</strong> 维持当前素材结构，小幅尝试新标签迭代</p></div>
+        </section>
+    </div>
+
+    <script>
+        var chartOpts = function(title) {
+            return {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom', labels: { color: '#1F2937' } },
+                    title: { display: true, text: title, color: '#1F2937' }
+                }
+            };
+        };
+
+        var barOpts = function(title) {
+            var opts = chartOpts(title);
+            opts.indexAxis = 'y';
+            opts.scales = {
+                x: { beginAtZero: true, max: 100, ticks: { callback: function(v) { return v + '%'; }, color: '#1F2937' }, grid: { color: '#E5E7EB' } },
+                y: { ticks: { color: '#1F2937' }, grid: { color: '#E5E7EB' } }
+            };
+            return opts;
+        };
+
+        new Chart(document.getElementById('typeChart').getContext('2d'), {
+            type: 'doughnut',
+            data: {
+                labels: ["视频","文案","平面"],
+                datasets: [{ data: [213688.88000000024,50612.24999999999,22161.889999999996], backgroundColor: ['#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6', '#EC4899'] }]
+            },
+            options: chartOpts('素材大类消耗分布')
+        });
+
+        new Chart(document.getElementById('videoSizeChart').getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: ["9:16","16:9","1:1"],
+                datasets: [{ label: '消耗占比', data: [84.26214784784311,14.252777215173754,1.485074936983149], backgroundColor: '#3B82F6' }]
+            },
+            options: barOpts('视频尺寸消耗占比 (%)')
+        });
+
+        new Chart(document.getElementById('imageSizeChart').getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: ["1:1","16:9","4:5","#N/A"],
+                datasets: [{ label: '消耗占比', data: [52.749923404547175,26.806648710917703,20.43823879642033,0.005189088114777213], backgroundColor: '#10B981' }]
+            },
+            options: barOpts('平面尺寸消耗占比 (%)')
+        });
+    </script>
+</body>
+</html>
